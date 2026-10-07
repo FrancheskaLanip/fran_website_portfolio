@@ -944,7 +944,6 @@ textarea:focus-visible {
   outline-color: #fff;
 }
 
-/* The full list takes the place of the description, so the card never changes size */
 .skill-card .skill-more {
   position: absolute;
   left: 1.5rem;
@@ -1069,7 +1068,7 @@ textarea:focus-visible {
     height: 220px;
   }
   .nav-links li:not(:last-child) {
-    display: none; /* Only the Resume button stays; a hamburger menu can be added */
+    display: none; 
   }
   footer {
     flex-direction: column;
