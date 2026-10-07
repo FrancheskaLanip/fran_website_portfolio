@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fran | Website Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- For FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="locked">
+
+  <div class="bg"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span></div>
+
+  <!-- Welcome screen -->
+  <div id="splash">
+    <div class="splash-icons"><span><i class="fa-solid fa-code"></i></span><span><i
+          class="fa-solid fa-user"></i></span><span><i class="fa-brands fa-github"></i></span></div>
+    <h1>Welcome To My <span class="grad">Portfolio Website</span></h1>
+    <p>Take a look at my projects, skills and experience.</p>
+    <button class="btn-primary" id="enter">Enter <i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo"><a href="#hero">FL<span>.</span></a></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="resume.pdf" download="FrancheskaLanip-Resume.pdf" class="btn-primary">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <span class="greeting">Hi, my name is</span>
+      <h1>Francheska.</h1>
+      <h2 id="typed"></h2>
+      <p>I'm a 3rd year BSIT student at the Polytechnic University of the Philippines, Calauan, Laguna.
+        I aspire to be a network or database administrator, and I enjoy building simple programs along
+        the way.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="resume.pdf" download="FrancheskaLanip-Resume.pdf" class="btn-secondary"><i
+            class="fa-solid fa-download"></i> Download Resume</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="ring"></div>
+      <div class="pic">
+        <img src="images/profile.png" alt="My Profile Picture"
+          onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user',style:'font-size:6rem;color:#2a1622'}))">
+      </div>
+      <span class="float-chip fc1"><i class="fa-solid fa-code"></i></span>
+      <span class="float-chip fc2"><i class="fa-solid fa-database"></i></span>
+      <span class="float-chip fc3"><i class="fa-solid fa-shield-halved"></i></span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="section-title">
+      <h2>About Me</h2>
+      <p>Turning ideas into working software</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-left">
+        <div class="about-content">
+          <p>Databases and networking are the areas I enjoy most. I'm learning how to design
+            databases and set up networks, with the goal of becoming a database or network administrator
+            who keeps systems stable for the people who rely on them.</p>
+        </div>
+
+        <div class="education">
+          <h3>Education</h3>
+          <div class="edu-item">
+            <b>Bachelor of Science in Information Technology</b>
+            <span>Polytechnic University of the Philippines, Calauan, Laguna</span>
+            <small>2024 - Present</small>
+          </div>
+          <div class="edu-item">
+            <b>Senior High School - ABM (Accountancy, Business and Management)</b>
+            <span>Dayap National Integrated High School, Calauan, Laguna</span>
+            <small>2022 - 2024</small>
+          </div>
+        </div>
+        <div class="education">
+          <h3>Experience</h3>
+          <div class="edu-item">
+            <b>Work Immersion - Municipal Hall of Calauan, Laguna - HR Department</b>
+            <span>10 days, 80 hours</span>
+            <small>2024</small>
+          </div>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="education">
+          <h3>Academic Awards</h3>
+          <div class="edu-item">
+            <b>Dean's Lister</b>
+            <span>2nd Year, 1st and 2nd Semester</span>
+            <small>A.Y. 2025-2026</small>
+          </div>
+          <div class="edu-item">
+            <b>President's Lister</b>
+            <span>1st Year, 1st and 2nd Semester</span>
+            <small>A.Y. 2024-2025</small>
+          </div>
+        </div>
+        <div class="education">
+          <h3>Certifications &amp; Trainings</h3>
+          <div class="edu-item">
+            <b>BSIT Summer Camp 2026: Empowering Students Through Web Development Skills</b>
+            <span>BSIT Program and BSIT Alliance, PUP Calauan Campus</span>
+            <small>August 12-13, 2026</small>
+            <p>Attended a two-day training on HTML, CSS, JavaScript, PHP and Laravel.</p>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><b data-count="8">0</b><small>Languages</small></div>
+          <div class="stat"><b data-count="1">0</b><small>Certificates</small></div>
+          <div class="stat"><b data-count="4">0</b><small>Semesters with honors (College)</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="section-title">
+      <h2>Featured Projects</h2>
+      <p>Some of the things I've built</p>
+    </div>
+
+    <div class="project-grid">
+
+      <!-- Project 1  -->
+      <div class="project-card">
+        <div class="project-img">
+          <img src="images/project1.png" alt="Pokedex (ASP.NET) preview">
+        </div>
+        <div class="project-info">
+          <h3>Pokedex (ASP.NET)</h3>
+          <p>A Pokédex website with all 151 Generation I Pokémon. Users can collect Pokémon, build teams,
+            and battle.</p>
+          <div class="tech-tags">
+            <span>C#</span>
+            <span>ASP.NET Web API</span>
+            <span>EF Core</span>
+            <span>SQLite</span>
+            <span>JWT</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="details" hidden>
+            <p>This is a Pokédex website with all 151 Generation I Pokémon. Users can make an account,
+              search for Pokémon, and save them in their own collection. They can build teams of up to
+              six Pokémon and make them battle in the Battle Arena. Past battles are saved, so users
+              can look at their results later. It is built with ASP.NET, SQLite, and a secure login.</p>
+            <h4>Purpose</h4>
+            <p>The purpose of Pokédex (ASP.NET) is to make browsing and collecting Pokémon fun and
+              organized in one place. It also lets users play with their collection through teams
+              and battles. For us, it was a way to practice building a full-stack web app with a secure
+              login system and a REST API.</p>
+            <h4>Key features</h4>
+            <ul>
+              <li>Register, login, and forgot password with an email reset link (JWT-based)</li>
+              <li>Browse all 151 Generation I Pokémon with search and type filtering</li>
+              <li>Animated Pokéball cards that reveal each Pokémon when clicked</li>
+              <li>My Collection: catch and manage your own Pokémon</li>
+              <li>My Teams: build teams of up to 6 Pokémon</li>
+              <li>Battle Arena with a battle log and speed controls</li>
+              <li>Battle History to review past battles</li>
+              <li>Trainer profile with avatars (Ash, Misty, Brock, Jessie, James, Nurse Joy)</li>
+              <li>Welcome banner with Gen I overview cards</li>
+            </ul>
+          </div>
+          <div class="project-links">
+            <button class="details-btn" type="button">Details <i class="fa-solid fa-arrow-right"></i></button>
+            <a href="https://github.com/FrancheskaLanip/Pokedex_ASP.NET.git"><i class="fa-brands fa-github"></i>
+              GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-img">
+          <img src="images/project2.png" alt="Gen1 Pokédex (Spring Boot) preview">
+        </div>
+        <div class="project-info">
+          <h3>Gen1 Pokédex (Spring Boot)</h3>
+          <p>A Pokémon collection and battle game with all 151 Generation 1 Pokémon.
+            Users can catch, level up, evolve, and battle Pokémon.</p>
+          <div class="tech-tags">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>MySQL</span>
+            <span>React</span>
+            <span>Vite</span>
+            <span>Tailwind CSS</span>
+            <span>JWT</span>
+          </div>
+          <div class="details" hidden>
+            <p>Gen1 Pokédex is a web app with all 151 Generation 1 Pokémon.
+              Users can make an account, catch Pokémon, and build their own collection.
+              They can level up their Pokémon and evolve them. They can also battle, earn XP,
+              and join the leaderboard. There is also an admin panel for managing users and Pokémon.</p>
+            <h4>Purpose</h4>
+            <p>The purpose of this project is to make collecting and training Pokémon fun and easy to
+              track in one place. It also helped us practice building a full-stack app with a Java
+              backend and a React frontend.</p>
+            <h4>Key features</h4>
+            <ul>
+              <li>Register, login, and forgot password with secure JWT login</li>
+              <li>Browse, search, and filter all 151 Gen 1 Pokémon with full stats</li>
+              <li>Catch, release, and favorite Pokémon, with collection progress</li>
+              <li>Level up Pokémon and evolve them (20+ evolution chains)</li>
+              <li>Battle simulator with type effectiveness and XP rewards</li>
+              <li>Achievement badges, daily challenges, and a leaderboard</li>
+              <li>Admin panel to manage users and Pokémon, with audit logs</li>
+              <li>Mobile-friendly design with optional sound effects</li>
+            </ul>
+          </div>
+          <div class="project-links">
+            <button class="details-btn" type="button">Details <i class="fa-solid fa-arrow-right"></i></button>
+            <a href="https://github.com/AlaizaNicoleCaranto/Generation1Pokedex.git"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-img">
+          <img src="images/project3.png" alt="Grade Calculator preview">
+        </div>
+        <div class="project-info">
+          <h3>Grade Calculator</h3>
+          <p>A simple web-based grade calculator built with vanilla JavaScript. It lets users add
+            subjects with grades and unit weights, then instantly computes a weighted average.</p>
+          <div class="tech-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="details" hidden>
+            <p>A simple web-based grade calculator. Users add subjects with a grade and a unit weight,
+              and it computes the weighted average right away. Any subject can be deleted, and the
+              average updates instantly without reloading the page.</p>
+            <h4>Purpose</h4>
+            <p>This project was built to practice DOM manipulation, event handling, and array methods
+              in JavaScript. It demonstrates how a page can update dynamically without reloading.</p>
+            <h4>Key features</h4>
+            <ul>
+              <li>Add subjects with grade and unit weight through a simple form</li>
+              <li>Automatically calculates a weighted average in real time</li>
+              <li>Delete any subject instantly, with the average recalculating right away</li>
+            </ul>
+          </div>
+          <div class="project-links">
+            <button class="details-btn" type="button">Details <i class="fa-solid fa-arrow-right"></i></button>
+            <a href="https://github.com/FrancheskaLanip/GradeCalculator.git"><i class="fa-brands fa-github"></i>
+              GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <div class="project-img">
+          <img src="images/project4.png" alt="TaskFlow Ai preview">
+        </div>
+        <div class="project-info">
+          <h3>TaskFlow Ai</h3>
+          <p>A task manager web app where users can sign up, log in, and add, edit, and delete their
+            daily tasks. Built with Flask and SQLite</p>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>SQLite</span>
+            <span>HTML/CSS</span>
+          </div>
+          <div class="details" hidden>
+            <p>TaskFlow AI is a task manager web app that helps users organize their daily work
+              in one place. Each user creates an account and logs in to see only their own tasks.
+              They can add new tasks, view them in a list, open the full details, and edit or delete
+              them anytime. Tasks can be marked as done, and the whole list can be exported to a CSV
+              file.</p>
+            <h4>Purpose</h4>
+            <p>The purpose of TaskFlow AI is to help people keep track of their tasks without using paper
+              notes or scattered reminders. It gives users one simple place to plan, update, and finish
+              their work. It also let our group practice building a full web app with a login system and
+              a database.</p>
+            <h4>Key features</h4>
+            <ul>
+              <li>Secure signup and login, with a separate account for each user</li>
+              <li>Add new tasks with a title and description</li>
+              <li>View all tasks in one organized list</li>
+              <li>Open a task to see its full details</li>
+              <li>Edit or delete tasks anytime</li>
+              <li>Mark tasks as done to track progress</li>
+              <li>Profile page with photo upload</li>
+              <li>Export tasks to a CSV file</li>
+            </ul>
+          </div>
+          <div class="project-links">
+            <button class="details-btn" type="button">Details <i class="fa-solid fa-arrow-right"></i></button>
+            <a href="https://github.com/FrancheskaLanip/taskflow-ai.git"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="section-title">
+      <h2>Skills &amp; Technologies</h2>
+    </div>
+
+    <div class="skill-cards">
+      <div class="skill-card">
+        <h3>Programming</h3>
+        <p>Writing programs and application logic in several languages.</p>
+        <div class="skill-foot">
+          <div class="skill-icons">
+            <span><i class="fa-solid fa-code"></i></span>
+            <span><i class="fa-brands fa-python"></i></span>
+            <span><i class="fa-brands fa-java"></i></span>
+          </div>
+          <button class="more-btn" type="button" aria-expanded="false">View more <i
+              class="fa-solid fa-chevron-down"></i></button>
+        </div>
+        <div class="skill-more">
+          <div class="skill-list"><span><i class="fa-solid fa-code"></i> C</span><span><i class="fa-solid fa-code"></i>
+              C#</span><span><i class="fa-brands fa-python"></i> Python</span><span><i class="fa-brands fa-java"></i>
+              Java</span><span><i class="fa-brands fa-square-js"></i> JavaScript</span><span><i
+                class="fa-solid fa-terminal"></i> COBOL</span></div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Web</h3>
+        <p>Building the structure and styling of web pages.</p>
+        <div class="skill-foot">
+          <div class="skill-icons">
+            <span><i class="fa-brands fa-html5"></i></span>
+            <span><i class="fa-brands fa-css3-alt"></i></span>
+          </div>
+          <button class="more-btn" type="button" aria-expanded="false">View more <i
+              class="fa-solid fa-chevron-down"></i></button>
+        </div>
+        <div class="skill-more">
+          <div class="skill-list"><span><i class="fa-brands fa-html5"></i> HTML</span><span><i
+                class="fa-brands fa-css3-alt"></i> CSS</span></div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Databases</h3>
+        <p>Designing databases and managing data with SQL and PostgreSQL.</p>
+        <div class="skill-foot">
+          <div class="skill-icons">
+            <span><i class="fa-solid fa-database"></i></span>
+            <span><i class="fa-solid fa-table"></i></span>
+            <span><i class="fa-solid fa-diagram-project"></i></span>
+          </div>
+          <button class="more-btn" type="button" aria-expanded="false">View more <i
+              class="fa-solid fa-chevron-down"></i></button>
+        </div>
+        <div class="skill-more">
+          <div class="skill-list"><span><i class="fa-solid fa-database"></i> SQL</span><span><i
+                class="fa-solid fa-table"></i> PostgreSQL</span><span><i class="fa-solid fa-server"></i>
+              pgAdmin</span><span><i class="fa-solid fa-sitemap"></i> Database Design</span><span><i
+                class="fa-solid fa-diagram-project"></i> ERD</span></div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Design</h3>
+        <p>Planning app and website layouts before building them.</p>
+        <div class="skill-foot">
+          <div class="skill-icons">
+            <span><i class="fa-brands fa-figma"></i></span>
+            <span><i class="fa-solid fa-pen-ruler"></i></span>
+          </div>
+          <button class="more-btn" type="button" aria-expanded="false">View more <i
+              class="fa-solid fa-chevron-down"></i></button>
+        </div>
+        <div class="skill-more">
+          <div class="skill-list"><span><i class="fa-brands fa-figma"></i> Figma</span><span><i
+                class="fa-solid fa-pen-ruler"></i> Adobe XD</span></div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Tools</h3>
+        <p>Writing code, tracking changes and preparing documents.</p>
+        <div class="skill-foot">
+          <div class="skill-icons">
+            <span><i class="fa-solid fa-laptop-code"></i></span>
+            <span><i class="fa-brands fa-github"></i></span>
+            <span><i class="fa-solid fa-file-excel"></i></span>
+          </div>
+          <button class="more-btn" type="button" aria-expanded="false">View more <i
+              class="fa-solid fa-chevron-down"></i></button>
+        </div>
+        <div class="skill-more">
+          <div class="skill-list"><span><i class="fa-solid fa-laptop-code"></i> VS Code</span><span><i
+                class="fa-brands fa-git-alt"></i> Git</span><span><i class="fa-brands fa-github"></i>
+              GitHub</span><span><i class="fa-solid fa-file-excel"></i> Microsoft Excel</span><span><i
+                class="fa-solid fa-file-word"></i> Microsoft Word</span></div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Networking</h3>
+        <p>Setting up and testing small networks, from cabling to addressing.</p>
+        <div class="skill-foot">
+          <div class="skill-icons">
+            <span><i class="fa-solid fa-network-wired"></i></span>
+            <span><i class="fa-solid fa-ethernet"></i></span>
+            <span><i class="fa-solid fa-diagram-project"></i></span>
+          </div>
+          <button class="more-btn" type="button" aria-expanded="false">View more <i
+              class="fa-solid fa-chevron-down"></i></button>
+        </div>
+        <div class="skill-more">
+          <div class="skill-list">
+            <span><i class="fa-solid fa-ethernet"></i> Network Wiring</span>
+            <span><i class="fa-solid fa-network-wired"></i> Cisco Packet Tracer</span>
+            <span><i class="fa-solid fa-location-dot"></i> IP Addressing</span>
+            <span><i class="fa-solid fa-diagram-project"></i> Basic LAN Setup</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="section-title">
+      <h2>Get In Touch</h2>
+      <p>Have a question or want to connect? Send me a message!</p>
+    </div>
+
+    <form class="contact-form" action="mailto:you@example.com" method="post" enctype="text/plain">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Francheska. PUP Calauan, Laguna.</p>
+    <div class="social-links">
+      <a href="https://github.com/yourname" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/yourname" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:you@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <!-- Project details pop-up -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-label="Project details">
+    <div class="modal-box">
+      <button class="m-close" type="button" aria-label="Close">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>s
