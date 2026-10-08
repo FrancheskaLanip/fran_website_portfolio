@@ -440,7 +440,8 @@ section {
   display: block;
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  object-fit: contain;
+  background: #0a0709;
   transition: transform 0.5s;
 }
 
@@ -688,7 +689,8 @@ textarea:focus-visible {
   display: block;
   width: 100%;
   height: 220px;
-  object-fit: cover;
+  object-fit: contain;
+  background: #0a0709;
 }
 
 #modalBody h3 {
@@ -944,6 +946,7 @@ textarea:focus-visible {
   outline-color: #fff;
 }
 
+/* The full list takes the place of the description, so the card never changes size */
 .skill-card .skill-more {
   position: absolute;
   left: 1.5rem;
@@ -1007,6 +1010,15 @@ textarea:focus-visible {
   }
 }
 
+/* ===== Skills always visible =====
+   Delete this whole block to bring back the "View more" button. */
+.skill-cards { align-items: stretch; }
+.skill-card { height: auto; }
+.skill-card p { flex: none; min-height: 0; margin-bottom: 1.1rem; }
+.skill-card .skill-foot { display: none; }
+.skill-card .skill-more { position: static; opacity: 1; visibility: visible; }
+.skill-list { height: auto; overflow: visible; }
+
 /* ===== Scroll pop-up (added by the script at the bottom of index.html) ===== */
 .reveal {
   opacity: 0;
@@ -1068,7 +1080,7 @@ textarea:focus-visible {
     height: 220px;
   }
   .nav-links li:not(:last-child) {
-    display: none; 
+    display: none; /* Only the Resume button stays; a hamburger menu can be added */
   }
   footer {
     flex-direction: column;
