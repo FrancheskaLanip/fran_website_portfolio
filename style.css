@@ -6,13 +6,13 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* ===== EDIT YOUR COLORS HERE ===== */
+
 :root {
   --bg-color: #0a0709;
   --card-bg: #140c12;
-  --primary-color: #ff4fa0;   /* hot pink */
+  --primary-color: #ff4fa0;   
   --primary-hover: #e63688;
-  --soft-pink: #ff9fcf;       /* soft pink */
+  --soft-pink: #ff9fcf;       
   --text-color: #fdf0f6;
   --text-muted: #b79aab;
   --border-color: #2a1622;
@@ -164,7 +164,7 @@ a {
   transition: color 0.2s;
 }
 
-/* Underline that grows on hover and for the current section */
+
 .nav-links a:not(.btn-primary)::after {
   content: "";
   position: absolute;
@@ -260,7 +260,7 @@ a {
   min-height: 3rem;
 }
 
-/* Blinking cursor after the typed role */
+
 .hero h2::after {
   content: "|";
   margin-left: 2px;
@@ -280,7 +280,7 @@ a {
   flex-wrap: wrap;
 }
 
-/* Profile photo with rotating ring and floating icons */
+/* Profile photo */
 .hero-photo {
   position: relative;
   width: 340px;
@@ -334,7 +334,7 @@ a {
 .fc2 { bottom: 12%; left: -20px; animation-delay: 0.8s; }
 .fc3 { bottom: -8px; right: 18%; animation-delay: 1.5s; }
 
-/* Sections Global */
+
 section {
   padding: 5rem 8%;
 }
@@ -349,7 +349,7 @@ section {
   margin-bottom: 0.5rem;
 }
 
-/* Short pink bar under each title */
+
 .section-title h2::after {
   content: "";
   display: block;
@@ -771,7 +771,7 @@ textarea:focus-visible {
 .edu-item small { color: var(--text-muted); }
 .edu-item p { color: var(--text-muted); margin-top: 0.3rem; font-size: 0.95rem; }
 
-/* ===== About layout: two columns ===== */
+
 .about-grid {
   max-width: 1000px;
   margin: 2.5rem auto 0;
@@ -809,7 +809,7 @@ textarea:focus-visible {
   margin: 0;
 }
 
-/* Small square count cards in one row */
+
 .about-right .stat {
   aspect-ratio: 1;
   display: flex;
@@ -946,7 +946,7 @@ textarea:focus-visible {
   outline-color: #fff;
 }
 
-/* The full list takes the place of the description, so the card never changes size */
+
 .skill-card .skill-more {
   position: absolute;
   left: 1.5rem;
@@ -1010,8 +1010,7 @@ textarea:focus-visible {
   }
 }
 
-/* ===== Skills always visible =====
-   Delete this whole block to bring back the "View more" button. */
+
 .skill-cards { align-items: stretch; }
 .skill-card { height: auto; }
 .skill-card p { flex: none; min-height: 0; margin-bottom: 1.1rem; }
@@ -1019,7 +1018,7 @@ textarea:focus-visible {
 .skill-card .skill-more { position: static; opacity: 1; visibility: visible; }
 .skill-list { height: auto; overflow: visible; }
 
-/* ===== Scroll pop-up (added by the script at the bottom of index.html) ===== */
+
 .reveal {
   opacity: 0;
   transform: translateY(40px) scale(0.97);
@@ -1080,7 +1079,7 @@ textarea:focus-visible {
     height: 220px;
   }
   .nav-links li:not(:last-child) {
-    display: none; /* Only the Resume button stays; a hamburger menu can be added */
+    display: none; 
   }
   footer {
     flex-direction: column;
